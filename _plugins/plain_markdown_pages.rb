@@ -4,7 +4,8 @@ module Knowledge
   CATEGORY_TITLES = {
     "ai" => "AI",
     "apple" => "Apple",
-    "android" => "Android"
+    "android" => "Android",
+    "idea" => "Idea"
   }.freeze
 
   class PlainMarkdownPages < Jekyll::Generator

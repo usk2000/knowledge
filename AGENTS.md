@@ -15,6 +15,7 @@
 - `ai/`: AIに関する調査。OpenAI、LLM、生成AI、Apple Foundation Models など。
 - `apple/`: iOS、macOS、visionOS、Swift、SwiftUI、Apple Developer 関連。
 - `android/`: Android、Kotlin、Jetpack、Google Play、Android Studio 関連。
+- `idea/`: アプリ・サービス・プロダクト・ツールなどのアイディアメモ。
 - `scripts/`: Jekyll ローカルサーバ、Markdown 変換、補助処理などのスクリプト。
 - `_plugins/`: Jekyll の補助 plugin。front matter なしの調査 Markdown を HTML ページとして扱う処理など。
 - `public/`: Jekyll で生成した HTML 出力先。生成物として扱い、Git には含めない。
@@ -22,6 +23,7 @@
 ## Markdown 作成ルール
 
 - 1ページ1テーマを基本にする。複数テーマが混ざる場合は、分割を検討する。
+- `idea/` では 1ページ1アイディアを基本にし、背景、想定ユーザー、価値仮説、MVP、検証方法、未決事項を整理する。
 - ファイル名は英小文字、数字、ハイフンを使う。
   - 例: `apple/foundation-models-framework.md`
   - 例: `ai/openai-responses-api-notes.md`
@@ -67,12 +69,12 @@
 
 - Jekyll テーマは Just the Docs を前提にする。
 - Jekyll の左メニューは、ソースディレクトリと同じ階層構造を維持する。
-- `ai/index.md`、`apple/index.md`、`android/index.md` のようなカテゴリ目次は親ページとして扱い、配下の記事はその子として表示する。
+- `ai/index.md`、`apple/index.md`、`android/index.md`、`idea/index.md` のようなカテゴリ目次は親ページとして扱い、配下の記事はその子として表示する。
 - Mermaid は Just the Docs の Mermaid support を使い、Markdown では fenced code block の `mermaid` を使う。
 - `_config.yml` を作成・更新するときは、少なくとも `theme: just-the-docs` と `mermaid.version` を設定する。
-- `ai/`、`apple/`、`android/` 配下の Markdown は、front matter がなくても `_plugins/plain_markdown_pages.rb` で HTML 化する。
+- `ai/`、`apple/`、`android/`、`idea/` 配下の Markdown は、front matter がなくても `_plugins/plain_markdown_pages.rb` で HTML 化する。
 - `public/` は生成物置き場として扱い、直接編集しない。
-- Markdown の正本は `ai/`、`apple/`、`android/` などのソースディレクトリに置く。
+- Markdown の正本は `ai/`、`apple/`、`android/`、`idea/` などのソースディレクトリに置く。
 - `scripts/` のスクリプトは、ローカルプレビューや HTML 生成を再現できるように、引数や前提条件を分かりやすく保つ。
 - 生成処理を追加した場合は、このガイドか関連ドキュメントに実行方法を残す。
 

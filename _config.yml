@@ -22,6 +22,7 @@ knowledge_source_dirs:
   - ai
   - apple
   - android
+  - idea
 
 exclude:
   - Gemfile

@@ -22,6 +22,10 @@ nav_exclude: true
 
 - [Android 目次](android/)
 
+### Idea
+
+- [Idea 目次](idea/)
+
 ### 運用
 
 - Mermaid 図は、関係性、処理フロー、状態遷移、アーキテクチャ、比較構造を説明しやすくするときに使います。
