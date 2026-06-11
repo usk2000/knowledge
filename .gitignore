@@ -2,4 +2,6 @@ public/
 .jekyll-cache/
 .sass-cache/
 _site/
+.bundle/
+vendor/bundle/
 .DS_Store

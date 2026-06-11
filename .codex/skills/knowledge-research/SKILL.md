@@ -1,6 +1,6 @@
 ---
 name: knowledge-research
-description: Use when creating, updating, or organizing Markdown research notes in this knowledge repository, especially for AI, Apple platform, Android, SDK, API, framework, or developer documentation investigations.
+description: Use when creating, updating, or organizing Markdown research notes in this knowledge repository, especially for AI, Apple platform, Android, SDK, API, framework, developer documentation investigations, Mermaid diagrams, or Jekyll/Just the Docs documentation setup.
 ---
 
 # Knowledge Research
@@ -19,8 +19,9 @@ Use this skill to turn technical research into clear Markdown notes under this r
 2. Check whether a related note already exists with `rg --files` and targeted `rg` searches.
 3. For current technical facts, verify with primary sources when possible. Official docs, release notes, standards, source code, and vendor announcements are preferred.
 4. Write the note as a readable synthesis, not just a collection of links.
-5. Preserve uncertainty. Mark stale, conflicting, inferred, or untested information explicitly.
-6. Do not manually edit `public/`; it is generated output.
+5. Add a Mermaid diagram when it makes relationships, flows, states, architecture, or comparisons easier to understand.
+6. Preserve uncertainty. Mark stale, conflicting, inferred, or untested information explicitly.
+7. Do not manually edit `public/`; it is generated output.
 
 ## Note Shape
 
@@ -55,6 +56,43 @@ Prefer this structure unless an existing nearby note uses a clearer pattern:
 - Include dates for unstable facts such as API behavior, pricing, OS support, model availability, and SDK requirements.
 - Separate observed behavior, official claims, and inference.
 - When updating an existing note, keep useful historical context instead of silently erasing it.
+
+## Mermaid Diagrams
+
+- Use Mermaid only when it clarifies the note; do not force diagrams into simple summaries.
+- Prefer common diagram types:
+  - `flowchart TD` for process flow and decision paths.
+  - `sequenceDiagram` for API or component interactions.
+  - `stateDiagram-v2` for lifecycle and UI state transitions.
+  - `classDiagram` or `erDiagram` for model relationships.
+- Keep node labels concise and Japanese-readable.
+- Put diagrams near the explanation they support.
+- Use fenced code blocks:
+
+````md
+```mermaid
+flowchart TD
+  A[調査テーマ] --> B[一次情報を確認]
+  B --> C[Markdown に整理]
+  C --> D[未確認事項を明記]
+```
+````
+
+## Jekyll / Just the Docs
+
+- Use Just the Docs as the Jekyll theme for this repository.
+- Treat `public/` as generated output; source Markdown stays in directories such as `ai/`, `apple/`, and `android/`.
+- When creating or updating Jekyll config, include Mermaid support through Just the Docs:
+
+```yml
+theme: just-the-docs
+
+mermaid:
+  version: "10.9.1"
+```
+
+- If a project uses a local Mermaid bundle instead of a CDN, use Just the Docs' `mermaid.path` option and keep the asset under a source-controlled assets directory, not `public/`.
+- If changing theme or Mermaid behavior, verify with a local Jekyll build or preview when dependencies are available.
 
 ## Before Finishing
 

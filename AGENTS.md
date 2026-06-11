@@ -16,6 +16,7 @@
 - `apple/`: iOS、macOS、visionOS、Swift、SwiftUI、Apple Developer 関連。
 - `android/`: Android、Kotlin、Jetpack、Google Play、Android Studio 関連。
 - `scripts/`: Jekyll ローカルサーバ、Markdown 変換、補助処理などのスクリプト。
+- `_plugins/`: Jekyll の補助 plugin。front matter なしの調査 Markdown を HTML ページとして扱う処理など。
 - `public/`: Jekyll で生成した HTML 出力先。生成物として扱い、Git には含めない。
 
 ## Markdown 作成ルール
@@ -27,6 +28,7 @@
 - ページ冒頭に、分かる範囲で調査日と対象バージョンを置く。
 - 見出しは短く具体的にする。読者が検索や流し読みをしやすい構成を優先する。
 - コード例は、実行環境、前提条件、確認した挙動を添える。
+- 関係性、処理フロー、状態遷移、アーキテクチャ、比較構造が文章だけでは追いにくい場合は、Mermaid 図を使ってよい。
 - 出典リンクは本文末尾か関連セクションにまとめ、参照した日付を必要に応じて書く。
 
 推奨フォーマット:
@@ -63,15 +65,40 @@
 
 ## Jekyll / 生成物
 
+- Jekyll テーマは Just the Docs を前提にする。
+- Mermaid は Just the Docs の Mermaid support を使い、Markdown では fenced code block の `mermaid` を使う。
+- `_config.yml` を作成・更新するときは、少なくとも `theme: just-the-docs` と `mermaid.version` を設定する。
+- `ai/`、`apple/`、`android/` 配下の Markdown は、front matter がなくても `_plugins/plain_markdown_pages.rb` で HTML 化する。
 - `public/` は生成物置き場として扱い、直接編集しない。
 - Markdown の正本は `ai/`、`apple/`、`android/` などのソースディレクトリに置く。
 - `scripts/` のスクリプトは、ローカルプレビューや HTML 生成を再現できるように、引数や前提条件を分かりやすく保つ。
 - 生成処理を追加した場合は、このガイドか関連ドキュメントに実行方法を残す。
 
+最小設定例:
+
+```yml
+theme: just-the-docs
+
+mermaid:
+  version: "10.9.1"
+```
+
+Mermaid 例:
+
+````md
+```mermaid
+flowchart TD
+  A[調査テーマ] --> B[一次情報を確認]
+  B --> C[Markdown に整理]
+  C --> D[未確認事項を明記]
+```
+````
+
 ## Codex への作業指示
 
 - 調査依頼では、必要に応じて Web を確認し、公式ドキュメントや一次情報を優先して参照する。
 - 調査結果を Markdown 化するときは、結論、使いどころ、制約、未確認事項が分かるように整理する。
+- 図示が有効な調査では Mermaid を提案し、必要なら本文に追加する。
 - ファイル追加時は、上記ディレクトリ構成と命名規則に合わせる。
 - 生成物である `public/` を手編集しない。
 - 変更後は `git status --short` を確認し、意図しないファイルが含まれていないか見る。

@@ -1,0 +1,35 @@
+title: Knowledge
+description: 技術や知識の調査メモ
+theme: just-the-docs
+
+source: .
+destination: public
+
+mermaid:
+  version: "10.9.1"
+
+search_enabled: true
+heading_anchors: true
+enable_copy_code_button: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+knowledge_source_dirs:
+  - ai
+  - apple
+  - android
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - AGENTS.md
+  - scripts/
+  - public/
+  - vendor/
+  - .bundle/
+  - .codex/
+  - .git/

@@ -1,4 +1,4 @@
 interface:
   display_name: "Knowledge Research"
-  short_description: "Markdown research notes for this knowledge repo"
-  default_prompt: "調査結果をこのリポジトリの形式でMarkdownに整理して"
+  short_description: "Markdown research notes with Mermaid and Just the Docs"
+  default_prompt: "調査結果をMermaid図も必要に応じて使い、このリポジトリの形式でMarkdownに整理して"
