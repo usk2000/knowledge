@@ -12,6 +12,7 @@ AI、LLM、生成 AI、OpenAI、Apple Foundation Models などに関する調査
 ## 記事
 
 - [AI 基本用語集](ai-basic-glossary.html)
+- [Apple Foundation Models framework](apple-foundation-models-framework.html)
 
 ## 配置方針
 
