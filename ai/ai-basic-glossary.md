@@ -64,6 +64,8 @@ AI
 
 ## 生成 AI と LLM
 
+- 詳細: [生成 AI と LLM](generative-ai-and-llm.md)
+
 - **生成 AI (Generative AI)**: 文章、画像、音声、動画、コードなど、新しい内容を生成する AI。
 - **LLM / 大規模言語モデル (Large Language Model)**: 大量のテキストなどから言語のパターンを学び、文章の理解・生成・変換を行う大規模なモデル。
 - **基盤モデル (Foundation Model)**: 大量のデータで事前学習され、多様なタスクに転用できる大規模モデル。LLM はその代表例。
