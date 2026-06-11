@@ -66,6 +66,8 @@
 ## Jekyll / 生成物
 
 - Jekyll テーマは Just the Docs を前提にする。
+- Jekyll の左メニューは、ソースディレクトリと同じ階層構造を維持する。
+- `ai/index.md`、`apple/index.md`、`android/index.md` のようなカテゴリ目次は親ページとして扱い、配下の記事はその子として表示する。
 - Mermaid は Just the Docs の Mermaid support を使い、Markdown では fenced code block の `mermaid` を使う。
 - `_config.yml` を作成・更新するときは、少なくとも `theme: just-the-docs` と `mermaid.version` を設定する。
 - `ai/`、`apple/`、`android/` 配下の Markdown は、front matter がなくても `_plugins/plain_markdown_pages.rb` で HTML 化する。

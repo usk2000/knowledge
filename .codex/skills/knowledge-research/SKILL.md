@@ -82,6 +82,9 @@ flowchart TD
 
 - Use Just the Docs as the Jekyll theme for this repository.
 - Treat `public/` as generated output; source Markdown stays in directories such as `ai/`, `apple/`, and `android/`.
+- Keep the Just the Docs navigation hierarchy aligned with the source directory hierarchy.
+- Category `index.md` pages such as `ai/index.md`, `apple/index.md`, and `android/index.md` should be parent pages with `has_children: true`.
+- Child notes should appear under their directory's index page in the left navigation. For plain Markdown without front matter, keep `_plugins/plain_markdown_pages.rb` assigning the correct `parent` automatically.
 - When creating or updating Jekyll config, include Mermaid support through Just the Docs:
 
 ```yml
