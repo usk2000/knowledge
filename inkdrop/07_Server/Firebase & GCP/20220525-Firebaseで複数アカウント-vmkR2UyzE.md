@@ -1,0 +1,4 @@
+# Firebaseで複数アカウント
+
+
+https://stackoverflow.com/questions/33916448/how-to-change-firebase-user-login-identity-from-command-line-cli

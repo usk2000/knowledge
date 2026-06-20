@@ -11,7 +11,7 @@ has_children: true
 
 ## 記事
 
-まだ記事はありません。
+- [音声から楽譜を生成する MCP サービス](audio-to-score-mcp-service.html)
 
 ## 配置方針
 

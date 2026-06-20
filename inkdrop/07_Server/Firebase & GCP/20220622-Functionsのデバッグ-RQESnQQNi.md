@@ -1,0 +1,6 @@
+# Functionsのデバッグ
+
+
+```
+% firebase functions:shell
+```

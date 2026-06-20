@@ -1,0 +1,2 @@
+# AsyncChannelでKotlin.Flowっぽいことをやる
+

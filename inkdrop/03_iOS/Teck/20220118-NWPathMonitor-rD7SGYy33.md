@@ -1,0 +1,4 @@
+# NWPathMonitor
+
+
+- WifiとかMobileの状況

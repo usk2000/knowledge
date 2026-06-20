@@ -1,0 +1,2 @@
+# BaseViewModelの実装
+

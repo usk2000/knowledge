@@ -1,0 +1,21 @@
+# Tokens
+
+
+API key
+otiSokTLyfTzkp768OH4Ooh1o
+API key Secret
+uPZgMTebXGVeJDGkBBU46zBzy9k7TylH8hDGDI0mwn5WoSc4ax
+
+Access Token
+49614090-O9NhPBaHPPqA6ClqbvqRTjmFattio99ovSqg2QCri
+Access Token Secret
+GKlDuhYR3G8e638EUUMX0QS1k22OaoWCroQrH4IdiudyY
+
+
+Client ID
+dXBlbW5PRk02ZlMycWNvYVY2UjE6MTpjaQ
+Client Secret
+dshFsq9889Tcq5TUuzltDkEapbLEvDsP3w-6E4ukJ2u4t8N9Fg
+
+2022/07/19 sorter app
+AAAAAAAAAAAAAAAAAAAAAC4bBgEAAAAAX7FrbVuylEwaiMKRzoe8gAnJ70Y%3DP9ioVTWZqmrQ7HhOyt0RtGKfPJytN1kNg8sKWWVp2IMb3nPAy0
