@@ -11,7 +11,7 @@ iOS、macOS、visionOS、Swift、SwiftUI、Apple Developer 関連の調査メモ
 
 ## 記事
 
-まだ記事はありません。
+- [Disk Utility の暗号化ディスクで機密情報を管理する](disk-utility-encrypted-secrets.md)
 
 ## 配置方針
 
