@@ -11,6 +11,7 @@ has_children: true
 
 ## 記事
 
+- [ローカル Granola 型 Mac 会議メモアプリ](local-meeting-notes-mac-app.html)
 - [音声から楽譜を生成する MCP サービス](audio-to-score-mcp-service.html)
 
 ## 配置方針
