@@ -14,6 +14,7 @@ AI、LLM、生成 AI、OpenAI、Apple Foundation Models などに関する調査
 - [AI 基本用語集](ai-basic-glossary.html)
 - [生成 AI と LLM](generative-ai-and-llm.html)
 - [Apple Foundation Models framework](apple-foundation-models-framework.html)
+- [WWDC26 Apple Intelligence / Machine Learning から見る AI プロダクト導入](apple-intelligence-product-adoption-wwdc26.html)
 
 ## 配置方針
 
