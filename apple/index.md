@@ -12,6 +12,8 @@ iOS、macOS、visionOS、Swift、SwiftUI、Apple Developer 関連の調査メモ
 ## 記事
 
 - [Disk Utility の暗号化ディスクで機密情報を管理する](disk-utility-encrypted-secrets.md)
+- [OpenTelemetry で iOS / backend のパフォーマンスを計測する](opentelemetry-ios-backend-performance.md)
+- [OpenTelemetry iOS / Android / backend 実装判断 FAQ](opentelemetry-mobile-backend-faq.md)
 
 ## 配置方針
 
